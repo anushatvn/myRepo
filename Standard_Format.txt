@@ -1,0 +1,7 @@
+<jar destfile = "./jarfile/Demo.jar" basedir="./java_examples">
+<manifest>
+<attribute name ="Main-class" value="Demo"/>
+</manifest>
+
+
+</jar>
