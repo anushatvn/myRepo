@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<project name="secondClass" default="info">
+
+<target name="info">
+<echo> Welcome to the class</echo>
+</target>
+</project>
