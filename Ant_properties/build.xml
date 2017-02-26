@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<project name="secondClass" default="info">
+
+<target name="info" >
+
+<echo>My file location ${ant.file}</echo>
+<echo>java version is ${ant.java.version}</echo>
+<echo>Ant properties ${ant.version}</echo>
+
+</target>
+</project>

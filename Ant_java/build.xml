@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<project name ="Java" default="jar">
+
+<target name="jar" depends="run">
+<echo> jar block executed </echo>
+<mkdir dir="./jarfile"/>
+<jar destfile = "./jarfile/Java.jar" basedir="./java_file">
+<manifest>
+<attribute name ="Main-class" value="Java"/>
+</manifest>
+</jar>
+</target>
+
+<target name="run" depends="compile">
+<echo> run block executed</echo>
+<java jar="./jarfile/Java.jar" fork="true" />
+</target>
+
+<target name="compile">
+<echo> compile block executed </echo>
+<javac srcdir="./java_file" destdir="./java_file" />
+</target>
+
+</project>
